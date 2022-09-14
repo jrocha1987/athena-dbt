@@ -19,3 +19,11 @@ models:
         tests:
           - unique
           - not_null
+  - name: skupos_bucket_extract
+    description: "table filled from transactions bucket"
+    columns:
+      - name: transaction_set_id
+        description: "unique identifier of the transaction"
+      - name: store_id
+        description: "store id for the transaction" 
+      
